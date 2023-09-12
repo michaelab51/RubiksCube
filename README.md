@@ -1,0 +1,9 @@
+# RubiksCube
+Program, který podle fotek vyřeší Rubikovu kostku a uživateli poskyne návod.
+# Spuštění
+Pro správné fungování kódu musí mít uživatel nainstalované OpenCV v pythonu, využívá se zde totiž knihovny cv2. Aby se mohli tento program používat, musí být obrázky Rubikovy kostky ve stejném adresáři jako Python. Program vyžaduje šest fotografií, každá jedné strany Rubikovy kostky. Aby program mohl vzít fotografie poskytnuté uživatelem, stačí, aby byly v klasickém formátu například JPEG nebo PNG. Musí ovšem být nadepsané anglicky dle stran malými písmeny v angličtině, které mají reprezentovat, tedy například green.jpg. Může se stát, že program barvy špatně přečte, tedy i špatně vyřeší kostku, při špatném rozlišení či osvětlení obrázků, tedy čím kvalitnější, tím lepší. 
+Celý kód je v angličtině, tedy i poskytnuté obrázky musí být pojmenované anglicky a postup vyřečení Rubikovy kostky je také v angličtině. Uživatel tedy tento jazyk musí ovládat, nebo mít možnost využití překladače.
+# Značení tahů
+Kód využívá LBL metodu pro vyřešení Rubikovy kostky Nutná podmínka pro správnou funkci tohoto kódu je již vyřešený kříž z bílé barvy, každý uživatel by toho měl být schopen. Postup je zapsán pomocí písmen jako "U" a "R", která se běžně využívají k značení otáčení kostky. "U" představuje otočení horní vrstvy ve směru hodinových ručiček o 90 stupňů (jedna čtvrtina otáčky). "U'" (U apostrof) představuje otočení horní vrstvy proti směru hodinových ručiček o 90 stupňů (jedna čtvrtina otáčky v opačném směru).
+"U2" představuje dvojité otočení horní vrstvy, což znamená, že ji otočíte o 180 stupňů.
+Podobně se tento zápis používá i pro ostatní plochy krychle. Například „R2“ by znamenalo dvojité otočení pravé strany, „F2“ by znamenalo dvojité otočení přední strany a tak dále. Celé vysvětlení lze nalézt na těchto webových stránkách https://www.fyft.cz/speedcube-clanky/rubikova-kostka-znaceni-tahu/.
